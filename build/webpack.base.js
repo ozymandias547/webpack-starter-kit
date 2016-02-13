@@ -4,14 +4,13 @@ var webpack = require('webpack');
 var paths = require('./paths.conf.js');
 var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var bourbon = require('node-bourbon').includePaths;
 var WebpackConfig = require('webpack-config');
 
 module.exports = new WebpackConfig().merge({
     context: paths.srcPath,
     entry: {
-        reactApp: paths.srcPath + "/app.jsx"
+        reactApp: paths.srcPath + "/appEntry.jsx"
     },
     output: {
         path: paths.target,

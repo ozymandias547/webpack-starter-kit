@@ -1,3 +1,6 @@
+@import "./colors.scss";
+@import "bourbon";
+
 * {
 	box-sizing: border-box;
 }
@@ -14,7 +17,8 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 body {
-	color: #333;
+	color: $primary-color;
+
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	-webkit-text-size-adjust: none;

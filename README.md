@@ -18,3 +18,17 @@ npm run build-dev
 npm run build-prod #minifiies and concatenates
 ```
 
+unit testing - finds any file that matches *Spec.js and runs them in chome/safari/firefox as unit tests.  
+```
+npm test
+```
+
+CSS/SCSS Precompilation included as examples of possibilities:
+
+- Node-sass compiler, require SCSS using
+```
+require("./mySassFile.scss")
+```
+- Lightweight SCSS mixins through Bourbon (http://bourbon.io/)
+
+
