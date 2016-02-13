@@ -12,7 +12,7 @@ development mode - starts a webpack dev server that watches your src files and c
 npm start
 ```
 
-build development or production - generates a /dist folder in the root directory with compiled JS/CSS bundles.  Copy this dist folder into a statically server folder on any apache server, or setup a more complicated server such as node.
+build development or production - generates a /dist folder in the root directory with compiled JS/CSS bundles.  Copy this dist folder into a statically served folder, or extend this project with node precompiling your components.
 ```
 npm run build-dev
 npm run build-prod #minifiies and concatenates
