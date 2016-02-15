@@ -35,7 +35,7 @@ module.exports = function(config) {
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-            presets: ['react']
+            presets: ['react', 'es2015']
           },
           test: /\.jsx?$/
         }, {
