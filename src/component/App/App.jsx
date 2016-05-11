@@ -1,13 +1,15 @@
-var React = require('react');
+'use strict';
+
+import React from 'react';
 
 var App = React.createClass({
-	render: function() {
-		return (
-			<div>
-				hello there wow wowowo asdf
-			</div>
-		)
-	}
+  render: function() {
+    return (
+      <div>
+        Webpack-Starter-Kit
+      </div>
+    )
+  }
 });
 
 module.exports = App;
