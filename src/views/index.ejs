@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+	<% if (env === "dev") { %>
+		<link rel="stylesheet" href="http://localhost:8883/reactApp/reactApp.css">
+	<% } %>
+
+	<% if (env === "static") { %>
+		<link rel="stylesheet" href="/reactApp/reactApp.css">
+	<% } %>
+</head>
+<body>
+	<div class="reactApp"></div>
+
+	<% if (env === "dev") { %>
+		<script src="http://localhost:8883/reactApp/reactApp.js"></script>
+	<% } %>
+
+	<% if (env === "static") { %>
+		<script src="/reactApp/reactApp.js"></script>
+	<% } %>
+	
+</body>
+</html>

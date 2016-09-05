@@ -9,10 +9,9 @@
     "start": "npm run develop",
     "test": "cd build && karma start",
     "clean": "./build/scripts/clean.sh",
-    "lint": "jshint --exclude node_modules,dist .",
-    "build-dev": "npm run lint && npm run clean && ./build/scripts/copy.sh && webpack --config ./build/webpack.dev.js",
-    "build-prod": "npm run lint && npm run clean && ./build/scripts/copy.sh && webpack --config ./build/webpack.prod.js",
-    "develop": "npm run lint && webpack-dev-server --colors --no-info --config ./build/webpack.dev.js --port 8883 & sleep 1 && open -a \"Google Chrome\" http://localhost:8883/src/public/ & wait"
+    "build-dev": "npm run clean && ./build/scripts/copy.sh && webpack --config ./build/webpack.dev.js",
+    "build-prod": "npm run clean && ./build/scripts/copy.sh && webpack --config ./build/webpack.prod.js",
+    "develop": "webpack-dev-server --colors --no-info --config ./build/webpack.dev.js --port 8883 & sleep 1 && cd ./src && node server.js dev"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
@@ -42,5 +41,8 @@
     "webpack": "1.12.6",
     "webpack-config": "^3.1.0",
     "webpack-dev-server": "1.11.0"
+  },
+  "dependencies": {
+    "ejs": "^2.5.1"
   }
 }

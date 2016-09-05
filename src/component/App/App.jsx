@@ -6,7 +6,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        Webpack-Starter-Kit
+        Webpack-Starter-Kit test
       </div>
     )
   }
